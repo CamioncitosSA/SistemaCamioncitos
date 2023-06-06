@@ -12,7 +12,7 @@ namespace CapaDatos
     public class CD_Connection
     {
         // Establece la cadena de conexión a la base de datos
-        public SqlConnection db_connection = new SqlConnection("Server=DESKTOP-N7JF6PS; Database=Camioncitos_DB; Integrated Security=true");
+        public SqlConnection db_connection = new SqlConnection("Server=Nombre_Servidor; Database=Nombre_BaseDatos; Integrated Security=true");
 
         // Abre la conexión con la base de datos
         public SqlConnection OpenConnection()
