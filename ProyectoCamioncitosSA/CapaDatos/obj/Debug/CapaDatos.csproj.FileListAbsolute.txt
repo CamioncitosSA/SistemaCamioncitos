@@ -1,0 +1,81 @@
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.csproj.CopyComplete
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaDatos\obj\Debug\CapaDatos.pdb
