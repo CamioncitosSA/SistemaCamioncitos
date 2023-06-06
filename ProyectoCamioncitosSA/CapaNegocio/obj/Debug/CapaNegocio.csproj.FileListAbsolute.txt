@@ -1,0 +1,99 @@
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\17Febrero2023\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\24FebreroProyecto\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\5 SEMESTRE\Programacion Orientada a Eventos\28Febrero\ConexionBaseDatos\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\CLINICAVIRGENFATIMA\SistemaClinica\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\PROYECTO_CDS\SistemaCamioncitosSA ver3\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\PC\Documents\6 SEMESTRE\Construcción de Software\Avance mas\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\bin\Debug\System.Data.SqlClient.xml
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\SistemaCamioncitosSA_ver4\CapaNegocio\obj\Debug\CapaNegocio.pdb
