@@ -40,7 +40,7 @@ namespace CapaPresentacion
             string marca = txtMarca.Text.Trim();
             string modelo = txtModelo.Text.Trim();
             string placa = txtPlaca.Text.Trim();
-            float capacidadCarga = float.Parse(txtCapacidadCarga.Text.Trim());
+            float capacidadCarga;
             string estado;
 
             if (cmbEstado.SelectedIndex == 0)
@@ -52,42 +52,48 @@ namespace CapaPresentacion
                 estado = "U";
             }
 
-
             try
             {
-                if (!objCapaNegocio.NoNulos(tipoVehiculo, marca, modelo, placa, txtCapacidadCarga.Text.Trim(), estado))
+                if (string.IsNullOrWhiteSpace(tipoVehiculo) || string.IsNullOrWhiteSpace(marca) ||
+                    string.IsNullOrWhiteSpace(modelo) || string.IsNullOrWhiteSpace(placa) ||
+                    string.IsNullOrWhiteSpace(txtCapacidadCarga.Text.Trim()))
                 {
-                    if (!objCapaNegocio.ExisteVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado))
+                    throw new Exception("Uno o varios de los campos se encuentran vacíos");
+                }
+
+                if (!float.TryParse(txtCapacidadCarga.Text.Trim(), out capacidadCarga))
+                {
+                    throw new Exception("La capacidad de carga debe ser un número válido");
+                }
+
+                if (!objCapaNegocio.ExisteVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado))
+                {
+                    if (bandera)
                     {
-                        if (bandera)
-                        {
-                            objCapaNegocio.RegistrarVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
-                            MessageBox.Show("Registro creado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            Limpiar();
-                        }
-                        else
-                        {
-                            objCapaNegocio.ActualizarVehiculo(id_Vehiculo.ToString(), tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
-                            Limpiar();
-                            bandera = true;
-                        }
-                        CargarModulo();
+                        objCapaNegocio.RegistrarVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
+                        MessageBox.Show("Registro creado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Limpiar();
                     }
                     else
                     {
-                        MessageBox.Show("El módulo y objeto ingresados ya existen en la base de datos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        objCapaNegocio.ActualizarVehiculo(id_Vehiculo.ToString(), tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
                         Limpiar();
+                        bandera = true;
                     }
+                    CargarModulo();
                 }
                 else
                 {
-                    MessageBox.Show("Uno o varios de los campos se encuentran vacíos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    Limpiar();
+                    throw new Exception("El vehículo ingresado ya existe en la base de datos");
                 }
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Error: El formato de los datos ingresados es incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.GetType().ToString() + Environment.NewLine + "Mensaje: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -129,24 +135,27 @@ namespace CapaPresentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-
             if (dtgVehiculos.SelectedRows.Count > 0)
             {
-
                 DialogResult dr = MessageBox.Show("¿Está seguro de que desea eliminar este vehiculo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (dr == DialogResult.Yes)
                 {
-                    objCapaNegocio.EliminarVehiculo(dtgVehiculos.Rows[dtgVehiculos.CurrentCell.RowIndex].Cells[0].Value.ToString());
-                    CargarModulo();
+                    try
+                    {
+                        objCapaNegocio.EliminarVehiculo(dtgVehiculos.Rows[dtgVehiculos.CurrentCell.RowIndex].Cells[0].Value.ToString());
+                        CargarModulo();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Error al eliminar el vehículo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
                 }
-
             }
             else
             {
                 MessageBox.Show("Debe seleccionar una fila", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
-
         }
 
         public void Limpiar()
