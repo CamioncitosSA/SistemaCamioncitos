@@ -130,7 +130,7 @@ CREATE PROCEDURE OBTENER_USUARIO
     @PASSWORD VARCHAR(128)
 AS
 BEGIN
-    SELECT u.USERNAME AS NOMBRE_USUARIO
+    SELECT u.USERNAME AS NOMBRE_USUARIO	
     FROM TB_USUARIOS u
     WHERE u.USERNAME = @USERNAME AND u.CLAVE = HASHBYTES('SHA2_512', @PASSWORD);
 END
@@ -139,7 +139,6 @@ END
 EXEC REGISTRAR_USUARIO 'admin', 'admin', 1, 'ADMIN', 'admin@gmail.com';
 EXEC REGISTRAR_USUARIO 'secretaria', 'secretaria001', 2, 'Secretaria', 'secretaria1@gmail.com';
 EXEC REGISTRAR_USUARIO 'gerente', 'gerente001', 3, 'Gerente', 'gerente1@gmail.com';
-EXEC REGISTRAR_USUARIO 'chofer', 'chofer001', 4, 'Chofer', 'chofer1@gmail.com';
 
 SELECT * FROM TB_USUARIOS;
 

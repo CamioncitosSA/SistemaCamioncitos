@@ -100,16 +100,22 @@ BEGIN
     -- Devolver un mensaje indicando que se generó el comprobante de entrega
     SELECT 'Se ha generado el comprobante de entrega para la ruta con origen [' + @Origen + '] y destino [' + @Destino + '].';
 END;
-
-
 go
+
+-- Procedimiento almacenado para buscar rutas por destino
+CREATE PROCEDURE BuscarRutaPorDestino
+    @Destino VARCHAR(50)
+AS
+BEGIN
+    SELECT * FROM TB_RUTA WHERE Destino LIKE '%' + @Destino + '%';
+END
 
 -- DATOS QUEMADOS
 EXECUTE REGISTRAR_RUTA 'Origen A', 'Destino B', 100.0, 2.5, 'Detalles del pedido', 'Entregado';
-EXECUTE REGISTRAR_RUTA 'Origen C', 'Destino D', 200.0, 4.0, 'Detalles del pedido', 'En progreso';
+EXECUTE REGISTRAR_RUTA 'Origen C', 'Destino D', 200.0, 4.0, 'Detalles del pedido', 'Pendiente';
 EXECUTE REGISTRAR_RUTA 'Origen E', 'Destino F', 150.0, 3.0, 'Detalles del pedido', 'Entregado';
-EXECUTE REGISTRAR_RUTA 'Origen G', 'Destino H', 300.0, 6.0, 'Detalles del pedido', 'En progreso';
-EXECUTE REGISTRAR_RUTA 'Origen I', 'Destino J', 250.0, 5.0, 'Detalles del pedido', 'Entregado';
+EXECUTE REGISTRAR_RUTA 'Origen G', 'Destino H', 300.0, 6.0, 'Detalles del pedido', 'Pendiente';
+EXECUTE REGISTRAR_RUTA 'Origen I', 'Destino J', 250.0, 5.0, 'Detalles del pedido', 'Pendiente';
 
 -- ELIMINAR TABLA Y PROCEDIMIENTOS
 DROP TABLE TB_RUTA;

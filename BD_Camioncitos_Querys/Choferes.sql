@@ -103,11 +103,11 @@ GO
 
 -- DATOS QUEMADOS
 
-EXECUTE REGISTRAR_CHOFER 'John', 'Doe', 'M', 'Calle Principal 123', '1234567890', '2023-12-31', 'Disponible';
-EXECUTE REGISTRAR_CHOFER 'Aria', 'Celi', 'F', 'Calle Secundaria 345', '2345678901', '2023-11-28', 'No Disponible';
-EXECUTE REGISTRAR_CHOFER 'Lucas', 'Torre', 'M', 'Calle Principal 456', '3456789012', '2025-10-12', 'Disponible';
-EXECUTE REGISTRAR_CHOFER 'Viviana', 'Choez', 'F', 'Calle Secundaria 235', '4567890123', '2026-03-02', 'No Disponible';
-EXECUTE REGISTRAR_CHOFER 'Lucy', 'Clark', 'F', 'Calle Principal 1598', '5678901234', '2027-05-26', 'Disponible';
+EXECUTE REGISTRAR_CHOFER 'John', 'Doe', 'M', 'Calle Principal 123', '1234567890', '2023-12-31', 'D';
+EXECUTE REGISTRAR_CHOFER 'Aria', 'Celi', 'F', 'Calle Secundaria 345', '2345678901', '2023-11-28', 'N';
+EXECUTE REGISTRAR_CHOFER 'Lucas', 'Torre', 'M', 'Calle Principal 456', '3456789012', '2025-10-12', 'D';
+EXECUTE REGISTRAR_CHOFER 'Viviana', 'Choez', 'F', 'Calle Secundaria 235', '4567890123', '2026-03-02', 'N';
+EXECUTE REGISTRAR_CHOFER 'Lucy', 'Clark', 'F', 'Calle Principal 1598', '5678901234', '2027-05-26', 'D';
 
 -- CONSULTAR CHOFERES
 EXECUTE CONSULTAR_CHOFER;
