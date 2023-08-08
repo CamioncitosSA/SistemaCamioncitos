@@ -93,6 +93,29 @@ namespace CapaDatos
             return "USUARIO: " + nombreUsuario + "    ROL: " + nombreRol;
         }
 
+        // Método para obtener rol del usuario
+        public string Obtener_Rol(string user, string clave)
+        {
+            string nombreRol = "";
+            SqlCommand command = new SqlCommand();
+            command.Connection = db_connection.OpenConnection();
+            command.CommandText = "OBTENER_USUARIO_Y_ROL";
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@USERNAME", user);
+            command.Parameters.AddWithValue("@PASSWORD", clave);
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                nombreRol = reader["NOMBRE_ROL"].ToString();
+            }
+
+            // Cerrar la conexión
+            db_connection.CloseConnection();
+
+            return nombreRol;
+        }
+
         // MODULO DE VEHICULOS
 
         // Método para registrar un vehículo en la base de datos
@@ -351,37 +374,165 @@ namespace CapaDatos
             db_connection.CloseConnection();
         }
 
-        // Método para generar un comprobante de entrega
-        public void GenerarComprobanteEntrega(int rutaId)
+        // Método para buscar rutas por Destino
+        public DataTable BuscarRutaPorDestino(string destino)
         {
             SqlCommand sqlCommand = new SqlCommand();
             sqlCommand.Connection = db_connection.OpenConnection();
-            sqlCommand.CommandText = "GENERAR_COMPROBANTE_ENTREGA";
+            sqlCommand.CommandText = "BuscarRutaPorDestino";
             sqlCommand.CommandType = CommandType.StoredProcedure;
 
-            // Agregar parámetros para la consulta
-            sqlCommand.Parameters.AddWithValue("@IDRuta", rutaId);
+            // Agregar parámetros para el procedimiento almacenado
+            sqlCommand.Parameters.AddWithValue("@Destino", destino);
 
-            // Agregar parámetro de salida para almacenar el comprobante
-            SqlParameter outputParam = new SqlParameter("@Comprobante", SqlDbType.VarChar, 100);
-            outputParam.Direction = ParameterDirection.Output;
-            sqlCommand.Parameters.Add(outputParam);
+            // Ejecutar la consulta y obtener los resultados en un DataTable
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(sqlCommand);
+            dataAdapter.Fill(dataTable);
 
-            // Ejecutar la consulta
-            sqlCommand.ExecuteNonQuery();
-
-            // Obtener el valor del parámetro de salida
-            string comprobante = sqlCommand.Parameters["@Comprobante"].Value.ToString();
-
+            // Cerrar la conexión a la base de datos
             db_connection.CloseConnection();
 
-            // Imprimir el comprobante
-            Console.WriteLine("Comprobante de entrega:");
-            Console.WriteLine(comprobante);
+            return dataTable;
         }
 
 
+        // ASIGNACIONES RUTAS/CHOFERES
 
+        // Método para registrar una asignación de ruta en la base de datos
+        public void RegistrarAsignacionRuta(int idChofer, int idRuta)
+        {
+            SqlCommand sqlComando = new SqlCommand();
+            sqlComando.Connection = db_connection.OpenConnection();
+            sqlComando.CommandText = "RegistrarAsignacionRuta";
+            sqlComando.CommandType = CommandType.StoredProcedure;
+
+            // Agregar parámetros para la consulta
+            sqlComando.Parameters.AddWithValue("@IdChofer", idChofer);
+            sqlComando.Parameters.AddWithValue("@IDRuta", idRuta);
+
+            // Ejecutar la consulta
+            sqlComando.ExecuteNonQuery();
+            db_connection.CloseConnection();
+
+            // Cambiar disponibilidad del chofer a 'N'
+            ActualizarDisponibilidadChofer(idChofer, "N");
+
+            // Cambiar estado de entrega de la ruta a 'En Proceso'
+            ActualizarEstadoEntregaRuta(idRuta, "En Proceso");
+        }
+
+
+        // Método para consultar las asignaciones de ruta en la base de datos
+        public DataTable ConsultarAsignacionesRuta()
+        {
+            return GetData("ConsultarAsignacionesRuta");
+        }
+
+        public void EliminarAsignacionRuta(int idAsignacionRuta)
+        {
+            SqlCommand sqlComando = new SqlCommand();
+            sqlComando.Connection = db_connection.OpenConnection();
+            sqlComando.CommandText = "EliminarAsignacionRuta";
+            sqlComando.CommandType = CommandType.StoredProcedure;
+
+            // Agregar parámetros para la consulta
+            sqlComando.Parameters.AddWithValue("@IdAsignacionRuta", idAsignacionRuta);
+
+            // Obtener IdChofer e IDRuta de la asignación de ruta para revertir cambios
+            int idChofer = ObtenerIdChoferPorAsignacion(idAsignacionRuta);
+            int idRuta = ObtenerIdRutaPorAsignacion(idAsignacionRuta);
+
+            // Cambiar disponibilidad del chofer a 'D'
+            ActualizarDisponibilidadChofer(idChofer, "D");
+
+            sqlComando.Connection = db_connection.OpenConnection();
+
+            // Cambiar estado de entrega de la ruta a 'Disponible'
+            ActualizarEstadoEntregaRuta(idRuta, "Pendiente");
+
+            sqlComando.Connection = db_connection.OpenConnection();
+
+            // Ejecutar la consulta
+            sqlComando.ExecuteNonQuery();
+            db_connection.CloseConnection();
+        }
+
+        // Método para obtener una lista de choferes disponibles en la base de datos
+        public DataTable ObtenerChoferesDisponibles() => GetData("ObtenerChoferesDisponibles");
+
+        // Método para obtener una lista de rutas pendientes en la base de datos
+        public DataTable ObtenerRutasPendientes() => GetData("ObtenerRutasPendientes");
+
+
+
+        private int ObtenerIdChoferPorAsignacion(int idAsignacionRuta)
+        {
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Connection = db_connection.OpenConnection();
+            sqlCommand.CommandText = "ObtenerIdChoferPorAsignacion";
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+
+            // Agregar parámetros para el procedimiento almacenado
+            sqlCommand.Parameters.AddWithValue("@IdAsignacionRuta", idAsignacionRuta);
+
+            // Ejecutar la consulta y obtener el resultado
+            int idChofer = Convert.ToInt32(sqlCommand.ExecuteScalar());
+
+            db_connection.CloseConnection();
+
+            return idChofer;
+        }
+
+        private int ObtenerIdRutaPorAsignacion(int idAsignacionRuta)
+        {
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Connection = db_connection.OpenConnection();
+            sqlCommand.CommandText = "ObtenerIdRutaPorAsignacion";
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+
+            // Agregar parámetros para el procedimiento almacenado
+            sqlCommand.Parameters.AddWithValue("@IdAsignacionRuta", idAsignacionRuta);
+
+            // Ejecutar la consulta y obtener el resultado
+            int idRuta = Convert.ToInt32(sqlCommand.ExecuteScalar());
+
+            db_connection.CloseConnection();
+
+            return idRuta;
+        }
+
+        public void ActualizarDisponibilidadChofer(int idChofer, string disponibilidad)
+        {
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Connection = db_connection.OpenConnection();
+            sqlCommand.CommandText = "ActualizarDisponibilidadChofer";
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+
+            // Agregar parámetros para el procedimiento almacenado
+            sqlCommand.Parameters.AddWithValue("@IdChofer", idChofer);
+            sqlCommand.Parameters.AddWithValue("@DisponibilidadC", disponibilidad);
+
+            // Ejecutar la consulta
+            sqlCommand.ExecuteNonQuery();
+            db_connection.CloseConnection();
+        }
+
+        public void ActualizarEstadoEntregaRuta(int idRuta, string estadoEntrega)
+        {
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Connection = db_connection.OpenConnection();
+            sqlCommand.CommandText = "ActualizarEstadoEntregaRuta";
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+
+            // Agregar parámetros para el procedimiento almacenado
+            sqlCommand.Parameters.AddWithValue("@IDRuta", idRuta);
+            sqlCommand.Parameters.AddWithValue("@EstadoEntrega", estadoEntrega);
+
+            // Ejecutar la consulta
+            sqlCommand.ExecuteNonQuery();
+            db_connection.CloseConnection();
+        }
 
 
     }
