@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class FormMenu
+    partial class FormMenuSecretaria
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             panelSideMenu = new Panel();
             panelSubMenuAsignaciones = new Panel();
-            btnListadoRutaChofer = new Button();
+            btnRutaChofer = new Button();
             btnAsignaciones = new Button();
             panelSubMenuRutas = new Panel();
             btnConsultarRuta = new Button();
@@ -88,29 +88,29 @@
             // panelSubMenuAsignaciones
             // 
             panelSubMenuAsignaciones.BackColor = Color.Silver;
-            panelSubMenuAsignaciones.Controls.Add(btnListadoRutaChofer);
+            panelSubMenuAsignaciones.Controls.Add(btnRutaChofer);
             panelSubMenuAsignaciones.Dock = DockStyle.Top;
             panelSubMenuAsignaciones.Location = new Point(0, 574);
             panelSubMenuAsignaciones.Name = "panelSubMenuAsignaciones";
-            panelSubMenuAsignaciones.Size = new Size(223, 42);
+            panelSubMenuAsignaciones.Size = new Size(223, 36);
             panelSubMenuAsignaciones.TabIndex = 8;
             // 
-            // btnListadoRutaChofer
+            // btnRutaChofer
             // 
-            btnListadoRutaChofer.BackColor = Color.FromArgb(235, 231, 211);
-            btnListadoRutaChofer.Dock = DockStyle.Top;
-            btnListadoRutaChofer.FlatAppearance.BorderSize = 0;
-            btnListadoRutaChofer.FlatStyle = FlatStyle.Flat;
-            btnListadoRutaChofer.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            btnListadoRutaChofer.Location = new Point(0, 0);
-            btnListadoRutaChofer.Name = "btnListadoRutaChofer";
-            btnListadoRutaChofer.Padding = new Padding(35, 0, 0, 0);
-            btnListadoRutaChofer.Size = new Size(223, 40);
-            btnListadoRutaChofer.TabIndex = 8;
-            btnListadoRutaChofer.Text = "Listado Rutas/Choferes";
-            btnListadoRutaChofer.TextAlign = ContentAlignment.MiddleLeft;
-            btnListadoRutaChofer.UseVisualStyleBackColor = false;
-            btnListadoRutaChofer.Click += btnListadoRutaChofer_Click;
+            btnRutaChofer.BackColor = Color.FromArgb(235, 231, 211);
+            btnRutaChofer.Dock = DockStyle.Top;
+            btnRutaChofer.FlatAppearance.BorderSize = 0;
+            btnRutaChofer.FlatStyle = FlatStyle.Flat;
+            btnRutaChofer.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnRutaChofer.Location = new Point(0, 0);
+            btnRutaChofer.Name = "btnRutaChofer";
+            btnRutaChofer.Padding = new Padding(35, 0, 0, 0);
+            btnRutaChofer.Size = new Size(223, 40);
+            btnRutaChofer.TabIndex = 8;
+            btnRutaChofer.Text = "Rutas/Choferes";
+            btnRutaChofer.TextAlign = ContentAlignment.MiddleLeft;
+            btnRutaChofer.UseVisualStyleBackColor = false;
+            btnRutaChofer.Click += btnRutaChofer_Click;
             // 
             // btnAsignaciones
             // 
@@ -402,7 +402,6 @@
             // 
             // panelChildForm
             // 
-            panelChildForm.AutoScroll = true;
             panelChildForm.BackColor = Color.FromArgb(224, 224, 224);
             panelChildForm.Controls.Add(pictureBox2);
             panelChildForm.Dock = DockStyle.Fill;
@@ -422,7 +421,7 @@
             pictureBox2.TabIndex = 0;
             pictureBox2.TabStop = false;
             // 
-            // FormMenu
+            // FormMenuSecretaria
             // 
             AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -432,9 +431,9 @@
             Controls.Add(panelSideMenu);
             Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             MinimumSize = new Size(1022, 586);
-            Name = "FormMenu";
+            Name = "FormMenuSecretaria";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FormMenu";
+            Text = "FormMenuSecretaria";
             panelSideMenu.ResumeLayout(false);
             panelSubMenuAsignaciones.ResumeLayout(false);
             panelSubMenuRutas.ResumeLayout(false);
@@ -475,7 +474,7 @@
         private Label label1;
         private PictureBox btnLogout;
         private Panel panelSubMenuAsignaciones;
-        private Button btnListadoRutaChofer;
+        private Button btnRutaChofer;
         private Button btnAsignaciones;
     }
 }

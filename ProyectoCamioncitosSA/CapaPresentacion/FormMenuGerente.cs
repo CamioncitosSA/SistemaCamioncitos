@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FormMenu : Form
+    public partial class FormMenuGerente : Form
     {
         // Variables para almacenar el usuario y la contraseña
         public string usuario = "", clave = "";
@@ -20,7 +20,7 @@ namespace CapaPresentacion
         // Instancia de la clase CN_GetData para acceder a los datos de la capa de negocio
         CN_GetData objCapaNegocio = new CN_GetData();
 
-        public FormMenu(string user, string password)
+        public FormMenuGerente(string user, string password)
         {
             InitializeComponent();
 
@@ -35,7 +35,7 @@ namespace CapaPresentacion
             panelSubMenuAsignaciones.Visible = false;
         }
 
-        public FormMenu()
+        public FormMenuGerente()
         {
             InitializeComponent();
         }
@@ -97,7 +97,6 @@ namespace CapaPresentacion
         {
             showSubMenu(panelSubMenuAsignaciones);
         }
-
         private void btnNuevoVehiculo_Click(object sender, EventArgs e)
         {
             openChildForm(new FormVehiculo());
@@ -167,7 +166,7 @@ namespace CapaPresentacion
 
         }
 
-        private void btnListadoRutaChofer_Click(object sender, EventArgs e)
+        private void btnListadoRutasChoferes_Click(object sender, EventArgs e)
         {
             openChildForm(new FormListadoAsignacionRutas());
             hideSubMenu();

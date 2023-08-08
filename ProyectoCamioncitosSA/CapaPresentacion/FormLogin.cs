@@ -105,16 +105,57 @@ namespace CapaPresentacion
         }
 
         // Evento Click del botón Iniciar Sesión
+
+        //private void btnIniciarSesion_Click(object sender, EventArgs e)
+        //{
+        //    if (objCapaNegocio.Set_Login(txtUsuario.Text, txtContrasena.Text))
+        //    {
+        //        // Ocultar el formulario de inicio de sesión y mostrar el formulario del menú principal
+        //        this.Hide();
+        //        FormMenu form1 = new FormMenu(txtUsuario.Text, txtContrasena.Text);
+        //        form1.ShowDialog();
+        //        this.Close();
+        //    }
+        //}
+
+
         private void btnIniciarSesion_Click(object sender, EventArgs e)
         {
             if (objCapaNegocio.Set_Login(txtUsuario.Text, txtContrasena.Text))
             {
-                // Ocultar el formulario de inicio de sesión y mostrar el formulario del menú principal
+                // Obtener el rol del usuario después de validar el inicio de sesión
+                string rolUsuario = objCapaNegocio.CN_Obtener_Rol(txtUsuario.Text, txtContrasena.Text);
+
+                // Ocultar el formulario de inicio de sesión
                 this.Hide();
-                FormMenu form1 = new FormMenu(txtUsuario.Text, txtContrasena.Text);
-                form1.ShowDialog();
+
+                // Mostrar el formulario específico de acuerdo al rol del usuario
+                if (rolUsuario == "ADMINISTRADOR")
+                {
+                    FormMenu formAdmin = new FormMenu(txtUsuario.Text, txtContrasena.Text);
+                    formAdmin.ShowDialog();
+                }
+                else if (rolUsuario == "SECRETARIA")
+                {
+                    FormMenuSecretaria formSecretaria = new FormMenuSecretaria(txtUsuario.Text, txtContrasena.Text);
+                    formSecretaria.ShowDialog();
+                }
+                else if (rolUsuario == "GERENTE")
+                {
+                    FormMenuGerente formGerente = new FormMenuGerente(txtUsuario.Text, txtContrasena.Text);
+                    formGerente.ShowDialog();
+                }
+                else
+                {
+                    MessageBox.Show("Sigue el error Madge por: "+rolUsuario+".", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                // Cerrar el formulario de inicio de sesión
                 this.Close();
             }
         }
+
+
+
     }
 }

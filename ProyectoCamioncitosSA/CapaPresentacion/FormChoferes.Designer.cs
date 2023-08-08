@@ -28,282 +28,283 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnCerrar = new System.Windows.Forms.Button();
-            this.btnLimpiar = new System.Windows.Forms.Button();
-            this.cmbGenero = new System.Windows.Forms.ComboBox();
-            this.Genero = new System.Windows.Forms.Label();
-            this.NLicencia = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.Direccion = new System.Windows.Forms.Label();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.txtApellidos = new System.Windows.Forms.TextBox();
-            this.Apellidos = new System.Windows.Forms.Label();
-            this.Vencimiento = new System.Windows.Forms.Label();
-            this.Nombres = new System.Windows.Forms.Label();
-            this.cmbDisponibilidad = new System.Windows.Forms.ComboBox();
-            this.Disponibilidad = new System.Windows.Forms.Label();
-            this.txtNombres = new System.Windows.Forms.TextBox();
-            this.dtpVencimiento = new System.Windows.Forms.DateTimePicker();
-            this.txtNLicencia = new System.Windows.Forms.TextBox();
-            this.dtgChoferes = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgChoferes)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Location = new System.Drawing.Point(12, 12);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 2;
-            this.btnCerrar.Text = "X";
-            this.btnCerrar.UseVisualStyleBackColor = true;
+            btnLimpiar = new Button();
+            cmbGenero = new ComboBox();
+            Genero = new Label();
+            NLicencia = new Label();
+            txtDireccion = new TextBox();
+            Direccion = new Label();
+            btnEliminar = new Button();
+            btnModificar = new Button();
+            btnGuardar = new Button();
+            txtApellidos = new TextBox();
+            Apellidos = new Label();
+            Vencimiento = new Label();
+            Nombres = new Label();
+            cmbDisponibilidad = new ComboBox();
+            Disponibilidad = new Label();
+            txtNombres = new TextBox();
+            dtpVencimiento = new DateTimePicker();
+            txtNLicencia = new TextBox();
+            dtgChoferes = new DataGridView();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)dtgChoferes).BeginInit();
+            SuspendLayout();
             // 
             // btnLimpiar
             // 
-            this.btnLimpiar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLimpiar.Location = new System.Drawing.Point(662, 81);
-            this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(99, 48);
-            this.btnLimpiar.TabIndex = 36;
-            this.btnLimpiar.Text = "LIMPIAR";
-            this.btnLimpiar.UseVisualStyleBackColor = true;
-            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
+            btnLimpiar.BackColor = Color.FromArgb(68, 67, 110);
+            btnLimpiar.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLimpiar.ForeColor = Color.White;
+            btnLimpiar.Location = new Point(664, 104);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new Size(99, 48);
+            btnLimpiar.TabIndex = 36;
+            btnLimpiar.Text = "LIMPIAR";
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // cmbGenero
             // 
-            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbGenero.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cmbGenero.FormattingEnabled = true;
-            this.cmbGenero.Items.AddRange(new object[] {
-            "F (Femenino)",
-            "M (Masculino)"});
-            this.cmbGenero.Location = new System.Drawing.Point(117, 170);
-            this.cmbGenero.Name = "cmbGenero";
-            this.cmbGenero.Size = new System.Drawing.Size(145, 28);
-            this.cmbGenero.TabIndex = 34;
+            cmbGenero.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbGenero.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbGenero.FormattingEnabled = true;
+            cmbGenero.Items.AddRange(new object[] { "F (Femenino)", "M (Masculino)" });
+            cmbGenero.Location = new Point(107, 169);
+            cmbGenero.Name = "cmbGenero";
+            cmbGenero.Size = new Size(145, 28);
+            cmbGenero.TabIndex = 34;
             // 
             // Genero
             // 
-            this.Genero.AutoSize = true;
-            this.Genero.BackColor = System.Drawing.Color.Transparent;
-            this.Genero.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Genero.Location = new System.Drawing.Point(40, 173);
-            this.Genero.Name = "Genero";
-            this.Genero.Size = new System.Drawing.Size(60, 20);
-            this.Genero.TabIndex = 33;
-            this.Genero.Text = "Género:";
+            Genero.AutoSize = true;
+            Genero.BackColor = Color.Transparent;
+            Genero.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Genero.Location = new Point(16, 172);
+            Genero.Name = "Genero";
+            Genero.Size = new Size(67, 20);
+            Genero.TabIndex = 33;
+            Genero.Text = "Género:";
             // 
             // NLicencia
             // 
-            this.NLicencia.AutoSize = true;
-            this.NLicencia.BackColor = System.Drawing.Color.Transparent;
-            this.NLicencia.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NLicencia.Location = new System.Drawing.Point(279, 80);
-            this.NLicencia.Name = "NLicencia";
-            this.NLicencia.Size = new System.Drawing.Size(86, 20);
-            this.NLicencia.TabIndex = 31;
-            this.NLicencia.Text = "N° Licencia:";
+            NLicencia.AutoSize = true;
+            NLicencia.BackColor = Color.Transparent;
+            NLicencia.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            NLicencia.Location = new Point(269, 79);
+            NLicencia.Name = "NLicencia";
+            NLicencia.Size = new Size(98, 20);
+            NLicencia.TabIndex = 31;
+            NLicencia.Text = "N° Licencia:";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtDireccion.Location = new System.Drawing.Point(117, 220);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(145, 27);
-            this.txtDireccion.TabIndex = 30;
-            this.txtDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtDireccion_KeyPress);
+            txtDireccion.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtDireccion.Location = new Point(107, 219);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.Size = new Size(145, 27);
+            txtDireccion.TabIndex = 30;
+            txtDireccion.KeyPress += txtDireccion_KeyPress;
             // 
             // Direccion
             // 
-            this.Direccion.AutoSize = true;
-            this.Direccion.BackColor = System.Drawing.Color.Transparent;
-            this.Direccion.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Direccion.Location = new System.Drawing.Point(40, 223);
-            this.Direccion.Name = "Direccion";
-            this.Direccion.Size = new System.Drawing.Size(75, 20);
-            this.Direccion.TabIndex = 29;
-            this.Direccion.Text = "Dirección:";
+            Direccion.AutoSize = true;
+            Direccion.BackColor = Color.Transparent;
+            Direccion.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Direccion.Location = new Point(16, 222);
+            Direccion.Name = "Direccion";
+            Direccion.Size = new Size(85, 20);
+            Direccion.TabIndex = 29;
+            Direccion.Text = "Dirección:";
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnEliminar.Location = new System.Drawing.Point(662, 135);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(99, 48);
-            this.btnEliminar.TabIndex = 28;
-            this.btnEliminar.Text = "ELIMINAR";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            btnEliminar.BackColor = Color.FromArgb(68, 67, 110);
+            btnEliminar.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(664, 158);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(99, 48);
+            btnEliminar.TabIndex = 28;
+            btnEliminar.Text = "ELIMINAR";
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnModificar
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.Location = new System.Drawing.Point(557, 135);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(99, 48);
-            this.btnModificar.TabIndex = 27;
-            this.btnModificar.Text = "MODIFICAR";
-            this.btnModificar.UseVisualStyleBackColor = true;
-            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            btnModificar.BackColor = Color.FromArgb(68, 67, 110);
+            btnModificar.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnModificar.ForeColor = Color.White;
+            btnModificar.Location = new Point(559, 158);
+            btnModificar.Name = "btnModificar";
+            btnModificar.Size = new Size(99, 48);
+            btnModificar.TabIndex = 27;
+            btnModificar.Text = "MODIFICAR";
+            btnModificar.UseVisualStyleBackColor = false;
+            btnModificar.Click += btnModificar_Click;
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnGuardar.Location = new System.Drawing.Point(557, 81);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(99, 48);
-            this.btnGuardar.TabIndex = 26;
-            this.btnGuardar.Text = "GUARDAR";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            btnGuardar.BackColor = Color.FromArgb(68, 67, 110);
+            btnGuardar.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            btnGuardar.ForeColor = Color.White;
+            btnGuardar.Location = new Point(559, 104);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new Size(99, 48);
+            btnGuardar.TabIndex = 26;
+            btnGuardar.Text = "GUARDAR";
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // txtApellidos
             // 
-            this.txtApellidos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtApellidos.Location = new System.Drawing.Point(117, 121);
-            this.txtApellidos.Name = "txtApellidos";
-            this.txtApellidos.Size = new System.Drawing.Size(145, 27);
-            this.txtApellidos.TabIndex = 25;
-            this.txtApellidos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellidos_KeyPress);
+            txtApellidos.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtApellidos.Location = new Point(107, 120);
+            txtApellidos.Name = "txtApellidos";
+            txtApellidos.Size = new Size(145, 27);
+            txtApellidos.TabIndex = 25;
+            txtApellidos.KeyPress += txtApellidos_KeyPress;
             // 
             // Apellidos
             // 
-            this.Apellidos.AutoSize = true;
-            this.Apellidos.BackColor = System.Drawing.Color.Transparent;
-            this.Apellidos.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Apellidos.Location = new System.Drawing.Point(40, 124);
-            this.Apellidos.Name = "Apellidos";
-            this.Apellidos.Size = new System.Drawing.Size(75, 20);
-            this.Apellidos.TabIndex = 23;
-            this.Apellidos.Text = "Apellidos:";
+            Apellidos.AutoSize = true;
+            Apellidos.BackColor = Color.Transparent;
+            Apellidos.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Apellidos.Location = new Point(16, 123);
+            Apellidos.Name = "Apellidos";
+            Apellidos.Size = new Size(85, 20);
+            Apellidos.TabIndex = 23;
+            Apellidos.Text = "Apellidos:";
             // 
             // Vencimiento
             // 
-            this.Vencimiento.AutoSize = true;
-            this.Vencimiento.BackColor = System.Drawing.Color.Transparent;
-            this.Vencimiento.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Vencimiento.Location = new System.Drawing.Point(279, 124);
-            this.Vencimiento.Name = "Vencimiento";
-            this.Vencimiento.Size = new System.Drawing.Size(94, 20);
-            this.Vencimiento.TabIndex = 22;
-            this.Vencimiento.Text = "Vencimiento:";
+            Vencimiento.AutoSize = true;
+            Vencimiento.BackColor = Color.Transparent;
+            Vencimiento.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Vencimiento.Location = new Point(269, 123);
+            Vencimiento.Name = "Vencimiento";
+            Vencimiento.Size = new Size(107, 20);
+            Vencimiento.TabIndex = 22;
+            Vencimiento.Text = "Vencimiento:";
             // 
             // Nombres
             // 
-            this.Nombres.AutoSize = true;
-            this.Nombres.BackColor = System.Drawing.Color.Transparent;
-            this.Nombres.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Nombres.Location = new System.Drawing.Point(40, 80);
-            this.Nombres.Name = "Nombres";
-            this.Nombres.Size = new System.Drawing.Size(73, 20);
-            this.Nombres.TabIndex = 21;
-            this.Nombres.Text = "Nombres:";
+            Nombres.AutoSize = true;
+            Nombres.BackColor = Color.Transparent;
+            Nombres.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Nombres.Location = new Point(16, 79);
+            Nombres.Name = "Nombres";
+            Nombres.Size = new Size(81, 20);
+            Nombres.TabIndex = 21;
+            Nombres.Text = "Nombres:";
             // 
             // cmbDisponibilidad
             // 
-            this.cmbDisponibilidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbDisponibilidad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cmbDisponibilidad.FormattingEnabled = true;
-            this.cmbDisponibilidad.Items.AddRange(new object[] {
-            "Disponible",
-            "No Disponible"});
-            this.cmbDisponibilidad.Location = new System.Drawing.Point(395, 170);
-            this.cmbDisponibilidad.Name = "cmbDisponibilidad";
-            this.cmbDisponibilidad.Size = new System.Drawing.Size(145, 28);
-            this.cmbDisponibilidad.TabIndex = 38;
+            cmbDisponibilidad.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbDisponibilidad.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbDisponibilidad.FormattingEnabled = true;
+            cmbDisponibilidad.Items.AddRange(new object[] { "Disponible", "No Disponible" });
+            cmbDisponibilidad.Location = new Point(396, 169);
+            cmbDisponibilidad.Name = "cmbDisponibilidad";
+            cmbDisponibilidad.Size = new Size(145, 28);
+            cmbDisponibilidad.TabIndex = 38;
             // 
             // Disponibilidad
             // 
-            this.Disponibilidad.AutoSize = true;
-            this.Disponibilidad.BackColor = System.Drawing.Color.Transparent;
-            this.Disponibilidad.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Disponibilidad.Location = new System.Drawing.Point(279, 173);
-            this.Disponibilidad.Name = "Disponibilidad";
-            this.Disponibilidad.Size = new System.Drawing.Size(110, 20);
-            this.Disponibilidad.TabIndex = 37;
-            this.Disponibilidad.Text = "Disponibilidad:";
+            Disponibilidad.AutoSize = true;
+            Disponibilidad.BackColor = Color.Transparent;
+            Disponibilidad.Font = new Font("Segoe UI Historic", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            Disponibilidad.Location = new Point(269, 172);
+            Disponibilidad.Name = "Disponibilidad";
+            Disponibilidad.Size = new Size(125, 20);
+            Disponibilidad.TabIndex = 37;
+            Disponibilidad.Text = "Disponibilidad:";
             // 
             // txtNombres
             // 
-            this.txtNombres.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNombres.Location = new System.Drawing.Point(117, 77);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(145, 27);
-            this.txtNombres.TabIndex = 39;
-            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
+            txtNombres.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNombres.Location = new Point(107, 76);
+            txtNombres.Name = "txtNombres";
+            txtNombres.Size = new Size(145, 27);
+            txtNombres.TabIndex = 39;
+            txtNombres.KeyPress += txtNombres_KeyPress;
             // 
             // dtpVencimiento
             // 
-            this.dtpVencimiento.CustomFormat = "AAAA/MM/DD";
-            this.dtpVencimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpVencimiento.Location = new System.Drawing.Point(395, 124);
-            this.dtpVencimiento.Name = "dtpVencimiento";
-            this.dtpVencimiento.Size = new System.Drawing.Size(145, 23);
-            this.dtpVencimiento.TabIndex = 40;
-            this.dtpVencimiento.Value = new System.DateTime(2023, 7, 23, 15, 54, 36, 0);
+            dtpVencimiento.CustomFormat = "AAAA/MM/DD";
+            dtpVencimiento.Format = DateTimePickerFormat.Short;
+            dtpVencimiento.Location = new Point(385, 123);
+            dtpVencimiento.Name = "dtpVencimiento";
+            dtpVencimiento.Size = new Size(145, 23);
+            dtpVencimiento.TabIndex = 40;
+            dtpVencimiento.Value = new DateTime(2023, 7, 23, 15, 54, 36, 0);
             // 
             // txtNLicencia
             // 
-            this.txtNLicencia.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtNLicencia.Location = new System.Drawing.Point(395, 77);
-            this.txtNLicencia.Name = "txtNLicencia";
-            this.txtNLicencia.Size = new System.Drawing.Size(145, 27);
-            this.txtNLicencia.TabIndex = 41;
-            this.txtNLicencia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNLicencia_KeyPress);
+            txtNLicencia.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNLicencia.Location = new Point(373, 76);
+            txtNLicencia.Name = "txtNLicencia";
+            txtNLicencia.Size = new Size(145, 27);
+            txtNLicencia.TabIndex = 41;
+            txtNLicencia.KeyPress += txtNLicencia_KeyPress;
             // 
             // dtgChoferes
             // 
-            this.dtgChoferes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgChoferes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgChoferes.Location = new System.Drawing.Point(40, 269);
-            this.dtgChoferes.Name = "dtgChoferes";
-            this.dtgChoferes.RowTemplate.Height = 25;
-            this.dtgChoferes.Size = new System.Drawing.Size(721, 277);
-            this.dtgChoferes.TabIndex = 42;
+            dtgChoferes.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            dtgChoferes.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dtgChoferes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgChoferes.Location = new Point(16, 270);
+            dtgChoferes.Name = "dtgChoferes";
+            dtgChoferes.RowTemplate.Height = 25;
+            dtgChoferes.Size = new Size(735, 277);
+            dtgChoferes.TabIndex = 42;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(16, 17);
+            label1.Name = "label1";
+            label1.Size = new Size(132, 32);
+            label1.TabIndex = 43;
+            label1.Text = "CHOFERES";
             // 
             // FormChoferes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 593);
-            this.Controls.Add(this.dtgChoferes);
-            this.Controls.Add(this.txtNLicencia);
-            this.Controls.Add(this.dtpVencimiento);
-            this.Controls.Add(this.txtNombres);
-            this.Controls.Add(this.cmbDisponibilidad);
-            this.Controls.Add(this.Disponibilidad);
-            this.Controls.Add(this.btnLimpiar);
-            this.Controls.Add(this.cmbGenero);
-            this.Controls.Add(this.Genero);
-            this.Controls.Add(this.NLicencia);
-            this.Controls.Add(this.txtDireccion);
-            this.Controls.Add(this.Direccion);
-            this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.txtApellidos);
-            this.Controls.Add(this.Apellidos);
-            this.Controls.Add(this.Vencimiento);
-            this.Controls.Add(this.Nombres);
-            this.Controls.Add(this.btnCerrar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormChoferes";
-            this.Text = "FormChoferes";
-            this.Load += new System.EventHandler(this.FormChoferes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgChoferes)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSteelBlue;
+            ClientSize = new Size(800, 593);
+            Controls.Add(label1);
+            Controls.Add(dtgChoferes);
+            Controls.Add(txtNLicencia);
+            Controls.Add(dtpVencimiento);
+            Controls.Add(txtNombres);
+            Controls.Add(cmbDisponibilidad);
+            Controls.Add(Disponibilidad);
+            Controls.Add(btnLimpiar);
+            Controls.Add(cmbGenero);
+            Controls.Add(Genero);
+            Controls.Add(NLicencia);
+            Controls.Add(txtDireccion);
+            Controls.Add(Direccion);
+            Controls.Add(btnEliminar);
+            Controls.Add(btnModificar);
+            Controls.Add(btnGuardar);
+            Controls.Add(txtApellidos);
+            Controls.Add(Apellidos);
+            Controls.Add(Vencimiento);
+            Controls.Add(Nombres);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FormChoferes";
+            Text = "FormChoferes";
+            Load += FormChoferes_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgChoferes).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private Button btnCerrar;
         private Button btnLimpiar;
         private ComboBox cmbGenero;
         private Label Genero;
@@ -323,5 +324,6 @@
         private DateTimePicker dtpVencimiento;
         private TextBox txtNLicencia;
         private DataGridView dtgChoferes;
+        private Label label1;
     }
 }

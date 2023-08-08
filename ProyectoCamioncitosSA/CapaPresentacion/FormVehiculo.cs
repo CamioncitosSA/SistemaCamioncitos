@@ -23,24 +23,35 @@ namespace CapaPresentacion
             InitializeComponent();
         }
 
-        private void FormVehiculo_Load(object sender, EventArgs e)
+        public void CargarModulo()
+        {
+            dtgVehiculos.DataSource = objCapaNegocio.ConsultarVehiculo();
+        }
+
+        public void Limpiar()
+        {
+            cmbTipoVehiculo.SelectedIndex = -1;
+            txtMarca.Text = "";
+            txtModelo.Text = "";
+            txtCapacidadCarga.Text = "";
+            txtPlaca.Text = "";
+            cmbEstado.SelectedIndex = -1;
+            btnGuardar.Enabled = true;
+        }
+
+        private void FormVehiculo_Load_1(object sender, EventArgs e)
         {
             CargarModulo();
             dtgVehiculos.ClearSelection();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnGuardar_Click(object sender, EventArgs e)
+        private void btnGuardar_Click_1(object sender, EventArgs e)
         {
             string tipoVehiculo = cmbTipoVehiculo.Text;
             string marca = txtMarca.Text.Trim();
             string modelo = txtModelo.Text.Trim();
             string placa = txtPlaca.Text.Trim();
-            float capacidadCarga;
+            float capacidadCarga = float.Parse(txtCapacidadCarga.Text.Trim());
             string estado;
 
             if (cmbEstado.SelectedIndex == 0)
@@ -52,57 +63,47 @@ namespace CapaPresentacion
                 estado = "U";
             }
 
+
             try
             {
-                if (string.IsNullOrWhiteSpace(tipoVehiculo) || string.IsNullOrWhiteSpace(marca) ||
-                    string.IsNullOrWhiteSpace(modelo) || string.IsNullOrWhiteSpace(placa) ||
-                    string.IsNullOrWhiteSpace(txtCapacidadCarga.Text.Trim()))
+                if (!objCapaNegocio.NoNulosVehiculo(tipoVehiculo, marca, modelo, placa, txtCapacidadCarga.Text.Trim(), estado))
                 {
-                    throw new Exception("Uno o varios de los campos se encuentran vacíos");
-                }
-
-                if (!float.TryParse(txtCapacidadCarga.Text.Trim(), out capacidadCarga))
-                {
-                    throw new Exception("La capacidad de carga debe ser un número válido");
-                }
-
-                if (!objCapaNegocio.ExisteVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado))
-                {
-                    if (bandera)
+                    if (!objCapaNegocio.ExisteVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado))
                     {
-                        objCapaNegocio.RegistrarVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
-                        MessageBox.Show("Registro creado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Limpiar();
+                        if (bandera)
+                        {
+                            objCapaNegocio.RegistrarVehiculo(tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
+                            MessageBox.Show("Registro creado correctamente", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            Limpiar();
+                        }
+                        else
+                        {
+                            objCapaNegocio.ActualizarVehiculo(id_Vehiculo.ToString(), tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
+                            Limpiar();
+                            bandera = true;
+                        }
+                        CargarModulo();
                     }
                     else
                     {
-                        objCapaNegocio.ActualizarVehiculo(id_Vehiculo.ToString(), tipoVehiculo, marca, modelo, placa, capacidadCarga, estado);
+                        MessageBox.Show("El módulo y objeto ingresados ya existen en la base de datos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         Limpiar();
-                        bandera = true;
                     }
-                    CargarModulo();
                 }
                 else
                 {
-                    throw new Exception("El vehículo ingresado ya existe en la base de datos");
+                    MessageBox.Show("Uno o varios de los campos se encuentran vacíos", "Error al Guardar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    Limpiar();
                 }
-            }
-            catch (FormatException ex)
-            {
-                MessageBox.Show("Error: El formato de los datos ingresados es incorrecto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error: " + ex.GetType().ToString() + Environment.NewLine + "Mensaje: " + ex.Message);
             }
+
         }
 
-        public void CargarModulo()
-        {
-            dtgVehiculos.DataSource = objCapaNegocio.ConsultarVehiculo();
-        }
-
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void btnModificar_Click_1(object sender, EventArgs e)
         {
             if (dtgVehiculos.SelectedRows.Count > 0)
             {
@@ -137,20 +138,15 @@ namespace CapaPresentacion
         {
             if (dtgVehiculos.SelectedRows.Count > 0)
             {
+
                 DialogResult dr = MessageBox.Show("¿Está seguro de que desea eliminar este vehiculo?", "Advertencia", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation);
 
                 if (dr == DialogResult.Yes)
                 {
-                    try
-                    {
-                        objCapaNegocio.EliminarVehiculo(dtgVehiculos.Rows[dtgVehiculos.CurrentCell.RowIndex].Cells[0].Value.ToString());
-                        CargarModulo();
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error al eliminar el vehículo: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    objCapaNegocio.EliminarVehiculo(dtgVehiculos.Rows[dtgVehiculos.CurrentCell.RowIndex].Cells[0].Value.ToString());
+                    CargarModulo();
                 }
+
             }
             else
             {
@@ -158,23 +154,12 @@ namespace CapaPresentacion
             }
         }
 
-        public void Limpiar()
-        {
-            cmbTipoVehiculo.SelectedIndex = -1;
-            txtMarca.Text = "";
-            txtModelo.Text = "";
-            txtCapacidadCarga.Text = "";
-            txtPlaca.Text = "";
-            cmbEstado.SelectedIndex = -1;
-            btnGuardar.Enabled = true;
-        }
-
-        private void btnLimpiar_Click(object sender, EventArgs e)
+        private void btnLimpiar_Click_1(object sender, EventArgs e)
         {
             Limpiar();
         }
 
-        private void txtMarca_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtMarca_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             char c = e.KeyChar;
             if (Char.IsLetter(c) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space)
@@ -187,7 +172,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void txtModelo_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtModelo_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             char c = e.KeyChar;
             if (Char.IsLetterOrDigit(c) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space)
@@ -200,7 +185,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void txtCapacidadCarga_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtCapacidadCarga_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             char c = e.KeyChar;
             if (Char.IsDigit(c) || c == '.' || e.KeyChar == (char)Keys.Back)
@@ -213,7 +198,7 @@ namespace CapaPresentacion
             }
         }
 
-        private void txtPlaca_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtPlaca_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = char.ToUpper(e.KeyChar);
             char c = e.KeyChar;
@@ -225,7 +210,6 @@ namespace CapaPresentacion
             {
                 e.Handled = true;
             }
-
         }
     }
 }

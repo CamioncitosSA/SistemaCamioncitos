@@ -28,48 +28,48 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.dtgListadoChoferes = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgListadoChoferes)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            dtgListadoChoferes = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dtgListadoChoferes).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(48, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(389, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Listado de Choferes - Camioncitos S.A";
+            label1.AutoSize = true;
+            label1.Font = new Font("Trebuchet MS", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            label1.Location = new Point(23, 40);
+            label1.Name = "label1";
+            label1.Size = new Size(389, 27);
+            label1.TabIndex = 0;
+            label1.Text = "Listado de Choferes - Camioncitos S.A";
             // 
             // dtgListadoChoferes
             // 
-            this.dtgListadoChoferes.AllowUserToAddRows = false;
-            this.dtgListadoChoferes.AllowUserToDeleteRows = false;
-            this.dtgListadoChoferes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgListadoChoferes.Location = new System.Drawing.Point(53, 85);
-            this.dtgListadoChoferes.Name = "dtgListadoChoferes";
-            this.dtgListadoChoferes.ReadOnly = true;
-            this.dtgListadoChoferes.RowTemplate.Height = 25;
-            this.dtgListadoChoferes.Size = new System.Drawing.Size(694, 300);
-            this.dtgListadoChoferes.TabIndex = 1;
+            dtgListadoChoferes.AllowUserToAddRows = false;
+            dtgListadoChoferes.AllowUserToDeleteRows = false;
+            dtgListadoChoferes.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgListadoChoferes.Location = new Point(28, 86);
+            dtgListadoChoferes.Name = "dtgListadoChoferes";
+            dtgListadoChoferes.ReadOnly = true;
+            dtgListadoChoferes.RowTemplate.Height = 25;
+            dtgListadoChoferes.Size = new Size(694, 300);
+            dtgListadoChoferes.TabIndex = 1;
             // 
             // FormListadoChoferes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dtgListadoChoferes);
-            this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormListadoChoferes";
-            this.Text = "FormListadoChoferes";
-            this.Load += new System.EventHandler(this.FormListadoChoferes_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgListadoChoferes)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LightSteelBlue;
+            ClientSize = new Size(800, 450);
+            Controls.Add(dtgListadoChoferes);
+            Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "FormListadoChoferes";
+            Text = "FormListadoChoferes";
+            Load += FormListadoChoferes_Load;
+            ((System.ComponentModel.ISupportInitialize)dtgListadoChoferes).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

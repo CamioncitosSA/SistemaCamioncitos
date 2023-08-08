@@ -38,11 +38,11 @@ namespace CapaPresentacion
             string direccion = txtDireccion.Text.Trim();
             string numLicencia = txtNLicencia.Text.Trim();
             DateTime venceLicencia = dtpVencimiento.Value;
-            string disponibilidad = cmbDisponibilidad.SelectedIndex == 0 ? "Disponible" : "No Disponible";
+            string disponibilidad = cmbDisponibilidad.SelectedIndex == 0 ? "D" : "N"; //cambie esto para guardar con literales en vez de la palabra
 
             try
             {
-                if (objCapaNegocio.NoNulos(nombres, apellidos, genero, direccion, numLicencia, venceLicencia, disponibilidad))
+                if (objCapaNegocio.NoNulosChofer(nombres, apellidos, genero, direccion, numLicencia, venceLicencia, disponibilidad))
                 {
 
                     if (bandera)
@@ -68,8 +68,8 @@ namespace CapaPresentacion
                 MessageBox.Show("Error: " + ex.GetType().ToString() + Environment.NewLine + "Mensaje: " + ex.Message);
             }
         }
-    
-        
+
+
 
         public void CargarModulo()
         {
@@ -109,8 +109,16 @@ namespace CapaPresentacion
 
         private int GetDisponibilidadIndexFromCellValue(string cellValue)
         {
-            return cellValue == "Disponible" ? 0 : 1;
+            if (cellValue == "D")
+            {
+                return 0;
+            }
+            else
+            {
+                return 1;
+            }
         }
+
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {

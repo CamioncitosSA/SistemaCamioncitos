@@ -35,13 +35,15 @@
             panel1 = new Panel();
             label2 = new Label();
             label1 = new Label();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // txtUsuario
             // 
-            txtUsuario.BackColor = Color.PowderBlue;
+            txtUsuario.BackColor = Color.White;
             txtUsuario.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtUsuario.ForeColor = SystemColors.WindowFrame;
             txtUsuario.Location = new Point(100, 202);
@@ -56,7 +58,7 @@
             // 
             // txtContrasena
             // 
-            txtContrasena.BackColor = Color.PowderBlue;
+            txtContrasena.BackColor = Color.White;
             txtContrasena.Font = new Font("Arial Narrow", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtContrasena.ForeColor = SystemColors.WindowFrame;
             txtContrasena.Location = new Point(100, 261);
@@ -71,15 +73,15 @@
             // 
             // btnIniciarSesion
             // 
-            btnIniciarSesion.BackColor = Color.FromArgb(3, 86, 149);
+            btnIniciarSesion.BackColor = Color.FromArgb(68, 67, 110);
             btnIniciarSesion.Cursor = Cursors.Hand;
-            btnIniciarSesion.Font = new Font("Arial", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            btnIniciarSesion.Font = new Font("Arial", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnIniciarSesion.ForeColor = Color.White;
-            btnIniciarSesion.Location = new Point(100, 332);
+            btnIniciarSesion.Location = new Point(100, 327);
             btnIniciarSesion.Name = "btnIniciarSesion";
             btnIniciarSesion.Size = new Size(233, 47);
             btnIniciarSesion.TabIndex = 0;
-            btnIniciarSesion.Text = "Iniciar Sesión";
+            btnIniciarSesion.Text = "Iniciar sesión";
             btnIniciarSesion.UseVisualStyleBackColor = false;
             btnIniciarSesion.Click += btnIniciarSesion_Click;
             // 
@@ -96,7 +98,8 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.White;
+            panel1.BackColor = Color.FromArgb(235, 231, 211);
+            panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(btnIniciarSesion);
             panel1.Controls.Add(txtUsuario);
@@ -111,11 +114,11 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.BackColor = Color.LightGray;
-            label2.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(87, 67);
+            label2.BackColor = Color.FromArgb(150, 147, 237);
+            label2.Font = new Font("Arial", 24F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(74, 125);
             label2.Name = "label2";
-            label2.Size = new Size(265, 45);
+            label2.Size = new Size(281, 37);
             label2.TabIndex = 3;
             label2.Text = "   Iniciar Sesion   ";
             // 
@@ -123,12 +126,22 @@
             // 
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(95, 270);
+            label1.Font = new Font("Arial Narrow", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(101, 271);
             label1.Name = "label1";
-            label1.Size = new Size(195, 32);
+            label1.Size = new Size(173, 29);
             label1.TabIndex = 5;
             label1.Text = "Camioncitos S.A.";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.perfil;
+            pictureBox2.Location = new Point(159, 13);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(108, 99);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 4;
+            pictureBox2.TabStop = false;
             // 
             // FormLogin
             // 
@@ -145,6 +158,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,5 +172,6 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
+        private PictureBox pictureBox2;
     }
 }
