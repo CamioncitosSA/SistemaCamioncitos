@@ -2,6 +2,9 @@
 ## Grupo C - SOF-S-MA-6-1
 Este es un sistema de gestión de vehículos desarrollado en C# utilizando Visual Studio y una base de datos en SQL Server. El sistema consta de tres módulos principales: Chofer, Vehículo y Ruta.
 
+![pantallademoCDS](https://github.com/CamioncitosSA/SistemaCamioncitos/assets/134811261/6074fcf7-2ca0-4054-998b-ebabe674b6e5)
+
+
 ## Requisitos previos
 
 Antes de instalar y ejecutar este sistema, asegúrese de tener lo siguiente:
